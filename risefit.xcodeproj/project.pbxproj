@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A8EC9C12947330200BA41B0 /* vibration.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A8EC9C02947330200BA41B0 /* vibration.mp3 */; };
+		74580CBF2947550C00488C95 /* UII in Resources */ = {isa = PBXBuildFile; fileRef = 74580CBE2947550C00488C95 /* UII */; };
+		74580CC12947551700488C95 /* PoseAngleClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 74580CC02947551700488C95 /* PoseAngleClassifier.mlmodel */; };
 		7701B7B31E99414800908B6C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701B7B21E99414800908B6C /* Extensions.swift */; };
 		77570F6B1E3EEA75005E2923 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77570F6A1E3EEA75005E2923 /* Persistence.swift */; };
 		7773A0F81E43276700811A1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773A0F71E43276700811A1D /* Constants.swift */; };
@@ -34,11 +35,6 @@
 		D16786752943FA8E001C509A /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786572943FA8D001C509A /* Pose.swift */; };
 		D16786762943FA8E001C509A /* PoseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786582943FA8D001C509A /* PoseBuilder.swift */; };
 		D16786772943FA8E001C509A /* PoseBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786592943FA8D001C509A /* PoseBuilderConfiguration.swift */; };
-		D16786782943FA8E001C509A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167865B2943FA8D001C509A /* ViewController.swift */; };
-		D16786792943FA8E001C509A /* PoseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167865C2943FA8D001C509A /* PoseImageView.swift */; };
-		D167867A2943FA8E001C509A /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167865D2943FA8D001C509A /* ConfigurationViewController.swift */; };
-		D167867B2943FA8E001C509A /* PopOverModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167865E2943FA8D001C509A /* PopOverModalViewController.swift */; };
-		D167867C2943FA8E001C509A /* GradientOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167865F2943FA8D001C509A /* GradientOverlayView.swift */; };
 		D167867D2943FA8E001C509A /* AVCaptureVideoOrientation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786612943FA8D001C509A /* AVCaptureVideoOrientation+Extension.swift */; };
 		D167867E2943FA8E001C509A /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786622943FA8D001C509A /* VideoCapture.swift */; };
 		D167867F2943FA8E001C509A /* PoseNetOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786642943FA8E001C509A /* PoseNetOutput.swift */; };
@@ -62,8 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A8EC9C02947330200BA41B0 /* vibration.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vibration.mp3; sourceTree = "<group>"; };
 		0A8EC9C2294733E100BA41B0 /* risefit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "risefit-Bridging-Header.h"; sourceTree = "<group>"; };
+		74580CBE2947550C00488C95 /* UII */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UII; sourceTree = "<group>"; };
+		74580CC02947551700488C95 /* PoseAngleClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PoseAngleClassifier.mlmodel; sourceTree = "<group>"; };
 		7701B7B21E99414800908B6C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		77570F6A1E3EEA75005E2923 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7773A0F71E43276700811A1D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -96,11 +93,6 @@
 		D16786572943FA8D001C509A /* Pose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
 		D16786582943FA8D001C509A /* PoseBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseBuilder.swift; sourceTree = "<group>"; };
 		D16786592943FA8D001C509A /* PoseBuilderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseBuilderConfiguration.swift; sourceTree = "<group>"; };
-		D167865B2943FA8D001C509A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D167865C2943FA8D001C509A /* PoseImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseImageView.swift; sourceTree = "<group>"; };
-		D167865D2943FA8D001C509A /* ConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
-		D167865E2943FA8D001C509A /* PopOverModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverModalViewController.swift; sourceTree = "<group>"; };
-		D167865F2943FA8D001C509A /* GradientOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientOverlayView.swift; sourceTree = "<group>"; };
 		D16786612943FA8D001C509A /* AVCaptureVideoOrientation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoOrientation+Extension.swift"; sourceTree = "<group>"; };
 		D16786622943FA8D001C509A /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		D16786642943FA8E001C509A /* PoseNetOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNetOutput.swift; sourceTree = "<group>"; };
@@ -152,16 +144,15 @@
 		9EED786E1AA0F03F00961BC2 /* risefit */ = {
 			isa = PBXGroup;
 			children = (
+				74580CBE2947550C00488C95 /* UII */,
 				D16786682943FA8E001C509A /* App */,
 				D16786502943FA8D001C509A /* Extensions+Types */,
 				D16786632943FA8E001C509A /* Model */,
 				D16786532943FA8D001C509A /* Pose */,
-				D167865A2943FA8D001C509A /* UI */,
 				D16786602943FA8D001C509A /* Utils */,
 				D13B885B293C5B4700828E54 /* PrefixHeader.pch */,
 				D13B885A293C5B0500828E54 /* ImageDSPUtils */,
 				D13B884F293C5ABE00828E54 /* opencv2.framework */,
-				0A8EC9C02947330200BA41B0 /* vibration.mp3 */,
 				D13B884E293C597600828E54 /* Alarm */,
 				9EED78751AA0F03F00961BC2 /* Main.storyboard */,
 				D13B884C293C551200828E54 /* YogaPoseViewController.swift */,
@@ -227,19 +218,6 @@
 			path = Pose;
 			sourceTree = "<group>";
 		};
-		D167865A2943FA8D001C509A /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				D167865B2943FA8D001C509A /* ViewController.swift */,
-				D167865C2943FA8D001C509A /* PoseImageView.swift */,
-				D167865D2943FA8D001C509A /* ConfigurationViewController.swift */,
-				D167865E2943FA8D001C509A /* PopOverModalViewController.swift */,
-				D167865F2943FA8D001C509A /* GradientOverlayView.swift */,
-			);
-			name = UI;
-			path = "../../../Downloads/DetectingHumanBodyPosesInAnImage 2/PoseFinder/UI";
-			sourceTree = "<group>";
-		};
 		D16786602943FA8D001C509A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +230,7 @@
 		D16786632943FA8E001C509A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				74580CC02947551700488C95 /* PoseAngleClassifier.mlmodel */,
 				D16786642943FA8E001C509A /* PoseNetOutput.swift */,
 				D16786652943FA8E001C509A /* PoseNet.swift */,
 				D16786662943FA8E001C509A /* PoseNetInput.swift */,
@@ -361,9 +340,9 @@
 				9E92445B1C690A8D00724DFA /* tickle.mp3 in Resources */,
 				9EED78771AA0F03F00961BC2 /* Main.storyboard in Resources */,
 				9E3B062F1BB8347000453456 /* bell.mp3 in Resources */,
+				74580CBF2947550C00488C95 /* UII in Resources */,
 				D16786852943FA8E001C509A /* Main1.storyboard in Resources */,
 				9EED787C1AA0F03F00961BC2 /* LaunchScreen.xib in Resources */,
-				0A8EC9C12947330200BA41B0 /* vibration.mp3 in Resources */,
 				9EED78791AA0F03F00961BC2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +361,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D167867C2943FA8E001C509A /* GradientOverlayView.swift in Sources */,
 				D13B8858293C5AE800828E54 /* FFTHelper.m in Sources */,
 				D13B884D293C551200828E54 /* YogaPoseViewController.swift in Sources */,
 				9EED789A1AA36C7900961BC2 /* VCAlarmSetting.swift in Sources */,
@@ -391,10 +369,9 @@
 				D167867F2943FA8E001C509A /* PoseNetOutput.swift in Sources */,
 				D13B8859293C5AE800828E54 /* OpenCVBridge.mm in Sources */,
 				7773A0F81E43276700811A1D /* Constants.swift in Sources */,
-				D16786792943FA8E001C509A /* PoseImageView.swift in Sources */,
+				74580CC12947551700488C95 /* PoseAngleClassifier.mlmodel in Sources */,
 				D16786742943FA8E001C509A /* PoseBuilder+Single.swift in Sources */,
 				D16786752943FA8E001C509A /* Pose.swift in Sources */,
-				D167867A2943FA8E001C509A /* ConfigurationViewController.swift in Sources */,
 				D16786712943FA8E001C509A /* CGImage+Extension.swift in Sources */,
 				D13B8857293C5AE800828E54 /* VideoAnalgesic.swift in Sources */,
 				9E1F30731C49128000C66F79 /* AlarmModel.swift in Sources */,
@@ -410,8 +387,6 @@
 				D168774F2945610F00253477 /* VCAlarmNameSetting.swift in Sources */,
 				D16786722943FA8E001C509A /* Joint.swift in Sources */,
 				9EEEC58C1BC641BF00459CF7 /* VCAlarmList.swift in Sources */,
-				D167867B2943FA8E001C509A /* PopOverModalViewController.swift in Sources */,
-				D16786782943FA8E001C509A /* ViewController.swift in Sources */,
 				D16786812943FA8E001C509A /* PoseNetInput.swift in Sources */,
 				7701B7B31E99414800908B6C /* Extensions.swift in Sources */,
 				77570F6B1E3EEA75005E2923 /* Persistence.swift in Sources */,
