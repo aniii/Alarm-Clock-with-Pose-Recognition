@@ -81,7 +81,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 didReceive response: UNNotificationResponse,
                 withCompletionHandler completionHandler:
                    @escaping () -> Void) {
-        var index: Int = -1
+        let storageController = UIAlertController(title: "The ONLY to stop the alarm is to SMILE!", message: nil, preferredStyle: .alert)
+                var isSnooze: Bool = false
+                var soundName: String = ""
+                var index: Int = -1
+                
+                let userInfo = response.notification.request.content.userInfo
+                    isSnooze = userInfo["snooze"] as! Bool
+                    soundName = userInfo["soundName"] as! String
+                    index = userInfo["index"] as! Int
+                
+                
+                alarmScheduler.playSound(soundName)
+                //schedule notification for snooze
+                if isSnooze {
+                    let snoozeOption = UIAlertAction(title: "Snooze", style: .default) {
+                        (action:UIAlertAction)->Void in self.alarmScheduler.audioPlayer?.stop()
+                        Task {
+                            await self.alarmScheduler.setNotificationForSnooze(snoozeMinute: 9, soundName: soundName, index: index)
+                        }
+                    }
+                    storageController.addAction(snoozeOption)
+                }
+                let stopOption = UIAlertAction(title: "OK", style: .default) {
+                    //(action:UIAlertAction)->Void in self.audioPlayer?.stop()
+                    (action:UIAlertAction)->Void in
+                    AudioServicesRemoveSystemSoundCompletion(kSystemSoundID_Vibrate)
+                    self.alarmModel = Alarms()
+                    self.alarmModel.alarms[index].onSnooze = false
+                    /////////////////////////
+                    /// ADD Video UI HERE!!!
+                    /// /////////////////////
+                    //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    //let mainVC = storyboard.instantiateViewController(withIdentifier: "Yoga") as? YogaPoseViewController
+                    //self.window?.visibleViewController?.present(mainVC!, animated: true, completion: nil)
+                    let storyboard = UIStoryboard(name: "Main1", bundle: nil)
+                    let mainVC = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
+                    self.window?.visibleViewController?.present(mainVC!, animated: true, completion: nil)
+                }
+                
+                storageController.addAction(stopOption)
+                window?.visibleViewController?.navigationController?.present(storageController, animated: true, completion: nil)
+
+               // Don't alert the user for other types.
+               completionHandler()
+        
+        /*var index: Int = -1
         var soundName: String = ""
         let userInfo = response.notification.request.content.userInfo
         soundName = userInfo["soundName"] as! String
@@ -95,7 +140,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             }
             self.alarmModel.alarms[index].onSnooze = true
         }
-        completionHandler()
+        completionHandler()*/
+        
+        
     }
     
     func requestAuthorization(
