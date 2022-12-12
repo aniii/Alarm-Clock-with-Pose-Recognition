@@ -103,11 +103,13 @@ class VCAlarmList: UITableViewController{
         if alarm.enabled {
             cell!.backgroundColor = UIColor.black
             cell!.textLabel?.alpha = 1.0
+            cell!.textLabel?.textColor = UIColor.white
             cell!.detailTextLabel?.alpha = 1.0
             sw.setOn(true, animated: false)
         } else {
             cell!.backgroundColor = UIColor.black
             cell!.textLabel?.alpha = 0.5
+            cell!.textLabel?.textColor = UIColor.white
             cell!.detailTextLabel?.alpha = 0.5
         }
         cell!.accessoryView = sw

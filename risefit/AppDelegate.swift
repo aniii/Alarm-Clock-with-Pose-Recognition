@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
              withCompletionHandler completionHandler:
                 @escaping (UNNotificationPresentationOptions) -> Void) {
         //show an alert window
-        let storageController = UIAlertController(title: "The ONLY to stop the alarm is to SMILE!", message: nil, preferredStyle: .alert)
+        let storageController = UIAlertController(title: "The ONLY to stop the alarm is to DO YOUR POSE!", message: nil, preferredStyle: .alert)
         var isSnooze: Bool = false
         var soundName: String = ""
         var index: Int = -1
@@ -81,7 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 didReceive response: UNNotificationResponse,
                 withCompletionHandler completionHandler:
                    @escaping () -> Void) {
-        let storageController = UIAlertController(title: "The ONLY to stop the alarm is to SMILE!", message: nil, preferredStyle: .alert)
+        let storageController = UIAlertController(title: "The ONLY to stop the alarm is to DO YOUR POSE!", message: nil, preferredStyle: .alert)
                 var isSnooze: Bool = false
                 var soundName: String = ""
                 var index: Int = -1

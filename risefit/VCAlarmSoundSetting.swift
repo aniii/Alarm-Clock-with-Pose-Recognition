@@ -38,37 +38,27 @@ class VCAlarmSoundSetting: UITableViewController, MPMediaPickerControllerDelegat
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // Return the number of sections.
-        return 4
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        if section == 0 {
-            return 1
-        }
-        else if section == 1 {
-            return 1
-        }
-        else if section == 2 {
+        /*if section == 0 {
             return 1
         }
         else {
             return numberOfRingtones
-        }
+        }*/
+        return numberOfRingtones
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? { if section == 0 {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? { /*if section == 0 {
             return nil
-        }
-        else if section == 1 {
-            return nil
-        }
-        else if section == 2 {
-            return "SONGS"
         }
         else {
-            return "RINGTONS"
-        }
+            return "RINGTONE"
+        }*/
+        return "RINGTONE"
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -82,22 +72,13 @@ class VCAlarmSoundSetting: UITableViewController, MPMediaPickerControllerDelegat
             cell = UITableViewCell(
                 style: UITableViewCell.CellStyle.default, reuseIdentifier: Constants.musicIdentifier)
         }
-        if indexPath.section == 0 {
+        /*if indexPath.section == 0 {
             if indexPath.row == 0 {
-                cell!.textLabel!.text = "Buy More Tones"
-            }
-        }
-        else if indexPath.section == 1 {
-            cell!.textLabel!.text = "Vibration"
-            cell!.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
-        }
-        else if indexPath.section == 2 {
-            if indexPath.row == 0 {
-                cell!.textLabel!.text = "Pick a song"
+                cell!.textLabel!.text = "Record voice"
                 cell!.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
             }
         }
-        else if indexPath.section == 3 {
+        else*/ if indexPath.section == 0 {
             if indexPath.row == 0 {
                 cell!.textLabel!.text = "bell"
             }
@@ -119,12 +100,12 @@ class VCAlarmSoundSetting: UITableViewController, MPMediaPickerControllerDelegat
         mediaPicker.delegate = self
         mediaPicker.prompt = "Select any song!"
         mediaPicker.allowsPickingMultipleItems = false
-        if indexPath.section == 2 {
+        /*if indexPath.section == 1 {
             if indexPath.row == 0 {
                 self.present(mediaPicker, animated: true, completion: nil)
             }
         }
-        else if indexPath.section == 3 {
+        else*/ if indexPath.section == 0 {
             let cell = tableView.cellForRow(at: indexPath)
             cell?.accessoryType = UITableViewCell.AccessoryType.checkmark
             mediaLabel = cell?.textLabel?.text!

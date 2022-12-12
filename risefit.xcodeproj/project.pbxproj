@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A8EC9C12947330200BA41B0 /* vibration.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A8EC9C02947330200BA41B0 /* vibration.mp3 */; };
 		7701B7B31E99414800908B6C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701B7B21E99414800908B6C /* Extensions.swift */; };
 		77570F6B1E3EEA75005E2923 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77570F6A1E3EEA75005E2923 /* Persistence.swift */; };
 		7773A0F81E43276700811A1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773A0F71E43276700811A1D /* Constants.swift */; };
@@ -61,25 +62,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A8EC9C02947330200BA41B0 /* vibration.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vibration.mp3; sourceTree = "<group>"; };
+		0A8EC9C2294733E100BA41B0 /* risefit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "risefit-Bridging-Header.h"; sourceTree = "<group>"; };
 		7701B7B21E99414800908B6C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		77570F6A1E3EEA75005E2923 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7773A0F71E43276700811A1D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9E1F30721C49128000C66F79 /* AlarmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
 		9E3B062E1BB8347000453456 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
 		9E92445A1C690A8D00724DFA /* tickle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tickle.mp3; sourceTree = "<group>"; };
-		9EED786C1AA0F03F00961BC2 /* smart-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smart-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EED786C1AA0F03F00961BC2 /* risefit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = risefit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EED78701AA0F03F00961BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EED78711AA0F03F00961BC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EED78761AA0F03F00961BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EED78781AA0F03F00961BC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9EED787B1AA0F03F00961BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9EED78811AA0F03F00961BC2 /* smart-alarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "smart-alarmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EED78811AA0F03F00961BC2 /* risefitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = risefitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EED78931AA1E51700961BC2 /* AlarmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmData.swift; sourceTree = "<group>"; };
 		9EED78991AA36C7900961BC2 /* VCAlarmSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCAlarmSetting.swift; sourceTree = "<group>"; };
 		9EEEC58B1BC641BF00459CF7 /* VCAlarmList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCAlarmList.swift; sourceTree = "<group>"; };
 		D13B884C293C551200828E54 /* YogaPoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaPoseViewController.swift; sourceTree = "<group>"; };
 		D13B884F293C5ABE00828E54 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
-		D13B8851293C5AE700828E54 /* smart-alarm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smart-alarm-Bridging-Header.h"; sourceTree = "<group>"; };
 		D13B8852293C5AE800828E54 /* VideoAnalgesic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoAnalgesic.swift; sourceTree = "<group>"; };
 		D13B8853293C5AE800828E54 /* FFTHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTHelper.m; sourceTree = "<group>"; };
 		D13B8854293C5AE800828E54 /* OpenCVBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVBridge.mm; sourceTree = "<group>"; };
@@ -133,7 +135,7 @@
 		9EED78631AA0F03F00961BC2 = {
 			isa = PBXGroup;
 			children = (
-				9EED786E1AA0F03F00961BC2 /* smart-alarm */,
+				9EED786E1AA0F03F00961BC2 /* risefit */,
 				9EED786D1AA0F03F00961BC2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,13 +143,13 @@
 		9EED786D1AA0F03F00961BC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9EED786C1AA0F03F00961BC2 /* smart-alarm.app */,
-				9EED78811AA0F03F00961BC2 /* smart-alarmTests.xctest */,
+				9EED786C1AA0F03F00961BC2 /* risefit.app */,
+				9EED78811AA0F03F00961BC2 /* risefitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9EED786E1AA0F03F00961BC2 /* smart-alarm */ = {
+		9EED786E1AA0F03F00961BC2 /* risefit */ = {
 			isa = PBXGroup;
 			children = (
 				D16786682943FA8E001C509A /* App */,
@@ -159,6 +161,7 @@
 				D13B885B293C5B4700828E54 /* PrefixHeader.pch */,
 				D13B885A293C5B0500828E54 /* ImageDSPUtils */,
 				D13B884F293C5ABE00828E54 /* opencv2.framework */,
+				0A8EC9C02947330200BA41B0 /* vibration.mp3 */,
 				D13B884E293C597600828E54 /* Alarm */,
 				9EED78751AA0F03F00961BC2 /* Main.storyboard */,
 				D13B884C293C551200828E54 /* YogaPoseViewController.swift */,
@@ -169,7 +172,7 @@
 				9EED78711AA0F03F00961BC2 /* AppDelegate.swift */,
 				9EED78781AA0F03F00961BC2 /* Images.xcassets */,
 			);
-			path = "smart-alarm";
+			path = risefit;
 			sourceTree = "<group>";
 		};
 		D13B884E293C597600828E54 /* Alarm */ = {
@@ -192,8 +195,8 @@
 		D13B885A293C5B0500828E54 /* ImageDSPUtils */ = {
 			isa = PBXGroup;
 			children = (
-				D13B8851293C5AE700828E54 /* smart-alarm-Bridging-Header.h */,
 				D13B8856293C5AE800828E54 /* FFTHelper.h */,
+				0A8EC9C2294733E100BA41B0 /* risefit-Bridging-Header.h */,
 				D13B8853293C5AE800828E54 /* FFTHelper.m */,
 				D13B8855293C5AE800828E54 /* OpenCVBridge.hh */,
 				D13B8854293C5AE800828E54 /* OpenCVBridge.mm */,
@@ -268,9 +271,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9EED786B1AA0F03F00961BC2 /* smart-alarm */ = {
+		9EED786B1AA0F03F00961BC2 /* risefit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9EED788B1AA0F03F00961BC2 /* Build configuration list for PBXNativeTarget "smart-alarm" */;
+			buildConfigurationList = 9EED788B1AA0F03F00961BC2 /* Build configuration list for PBXNativeTarget "risefit" */;
 			buildPhases = (
 				9EED78681AA0F03F00961BC2 /* Sources */,
 				9EED78691AA0F03F00961BC2 /* Frameworks */,
@@ -280,14 +283,14 @@
 			);
 			dependencies = (
 			);
-			name = "smart-alarm";
+			name = risefit;
 			productName = WeatherAlarm;
-			productReference = 9EED786C1AA0F03F00961BC2 /* smart-alarm.app */;
+			productReference = 9EED786C1AA0F03F00961BC2 /* risefit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9EED78801AA0F03F00961BC2 /* smart-alarmTests */ = {
+		9EED78801AA0F03F00961BC2 /* risefitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9EED788E1AA0F03F00961BC2 /* Build configuration list for PBXNativeTarget "smart-alarmTests" */;
+			buildConfigurationList = 9EED788E1AA0F03F00961BC2 /* Build configuration list for PBXNativeTarget "risefitTests" */;
 			buildPhases = (
 				9EED787D1AA0F03F00961BC2 /* Sources */,
 				9EED787E1AA0F03F00961BC2 /* Frameworks */,
@@ -298,9 +301,9 @@
 			dependencies = (
 				9EED78831AA0F03F00961BC2 /* PBXTargetDependency */,
 			);
-			name = "smart-alarmTests";
+			name = risefitTests;
 			productName = WeatherAlarmTests;
-			productReference = 9EED78811AA0F03F00961BC2 /* smart-alarmTests.xctest */;
+			productReference = 9EED78811AA0F03F00961BC2 /* risefitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -331,7 +334,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9EED78671AA0F03F00961BC2 /* Build configuration list for PBXProject "smart-alarm" */;
+			buildConfigurationList = 9EED78671AA0F03F00961BC2 /* Build configuration list for PBXProject "risefit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -344,8 +347,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9EED786B1AA0F03F00961BC2 /* smart-alarm */,
-				9EED78801AA0F03F00961BC2 /* smart-alarmTests */,
+				9EED786B1AA0F03F00961BC2 /* risefit */,
+				9EED78801AA0F03F00961BC2 /* risefitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -360,6 +363,7 @@
 				9E3B062F1BB8347000453456 /* bell.mp3 in Resources */,
 				D16786852943FA8E001C509A /* Main1.storyboard in Resources */,
 				9EED787C1AA0F03F00961BC2 /* LaunchScreen.xib in Resources */,
+				0A8EC9C12947330200BA41B0 /* vibration.mp3 in Resources */,
 				9EED78791AA0F03F00961BC2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +431,7 @@
 /* Begin PBXTargetDependency section */
 		9EED78831AA0F03F00961BC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9EED786B1AA0F03F00961BC2 /* smart-alarm */;
+			target = 9EED786B1AA0F03F00961BC2 /* risefit */;
 			targetProxy = 9EED78821AA0F03F00961BC2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -573,14 +577,14 @@
 				DEVELOPMENT_TEAM = X4H2R73S6W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/smart-alarm",
+					"$(PROJECT_DIR)/risefit",
 				);
-				INFOPLIST_FILE = "smart-alarm/Info.plist";
+				INFOPLIST_FILE = risefit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mjc25.smart-alarm";
-				PRODUCT_NAME = "smart-alarm";
-				SWIFT_OBJC_BRIDGING_HEADER = "smart-alarm/smart-alarm-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = mjc25.risefit;
+				PRODUCT_NAME = risefit;
+				SWIFT_OBJC_BRIDGING_HEADER = "risefit/risefit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 5.0;
@@ -595,14 +599,14 @@
 				DEVELOPMENT_TEAM = X4H2R73S6W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/smart-alarm",
+					"$(PROJECT_DIR)/risefit",
 				);
-				INFOPLIST_FILE = "smart-alarm/Info.plist";
+				INFOPLIST_FILE = risefit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mjc25.smart-alarm";
-				PRODUCT_NAME = "smart-alarm";
-				SWIFT_OBJC_BRIDGING_HEADER = "smart-alarm/smart-alarm-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = mjc25.risefit;
+				PRODUCT_NAME = risefit;
+				SWIFT_OBJC_BRIDGING_HEADER = "risefit/risefit-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 5.0;
 			};
@@ -623,10 +627,10 @@
 				INFOPLIST_FILE = AlarmTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LongGames.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "smart-alarmTests";
+				PRODUCT_NAME = risefitTests;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smart-alarm.app/smart-alarm";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/risefit.app/risefit";
 			};
 			name = Debug;
 		};
@@ -641,17 +645,17 @@
 				INFOPLIST_FILE = AlarmTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LongGames.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "smart-alarmTests";
+				PRODUCT_NAME = risefitTests;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smart-alarm.app/smart-alarm";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/risefit.app/risefit";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9EED78671AA0F03F00961BC2 /* Build configuration list for PBXProject "smart-alarm" */ = {
+		9EED78671AA0F03F00961BC2 /* Build configuration list for PBXProject "risefit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9EED78891AA0F03F00961BC2 /* Debug */,
@@ -660,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9EED788B1AA0F03F00961BC2 /* Build configuration list for PBXNativeTarget "smart-alarm" */ = {
+		9EED788B1AA0F03F00961BC2 /* Build configuration list for PBXNativeTarget "risefit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9EED788C1AA0F03F00961BC2 /* Debug */,
@@ -669,7 +673,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9EED788E1AA0F03F00961BC2 /* Build configuration list for PBXNativeTarget "smart-alarmTests" */ = {
+		9EED788E1AA0F03F00961BC2 /* Build configuration list for PBXNativeTarget "risefitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9EED788F1AA0F03F00961BC2 /* Debug */,
