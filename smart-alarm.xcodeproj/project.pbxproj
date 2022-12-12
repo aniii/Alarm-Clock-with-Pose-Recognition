@@ -25,6 +25,29 @@
 		D13B8857293C5AE800828E54 /* VideoAnalgesic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B8852293C5AE800828E54 /* VideoAnalgesic.swift */; };
 		D13B8858293C5AE800828E54 /* FFTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D13B8853293C5AE800828E54 /* FFTHelper.m */; };
 		D13B8859293C5AE800828E54 /* OpenCVBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = D13B8854293C5AE800828E54 /* OpenCVBridge.mm */; };
+		D16786702943FA8E001C509A /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786512943FA8D001C509A /* CGPoint+Extension.swift */; };
+		D16786712943FA8E001C509A /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786522943FA8D001C509A /* CGImage+Extension.swift */; };
+		D16786722943FA8E001C509A /* Joint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786542943FA8D001C509A /* Joint.swift */; };
+		D16786732943FA8E001C509A /* PoseBuilder+Multiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786552943FA8D001C509A /* PoseBuilder+Multiple.swift */; };
+		D16786742943FA8E001C509A /* PoseBuilder+Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786562943FA8D001C509A /* PoseBuilder+Single.swift */; };
+		D16786752943FA8E001C509A /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786572943FA8D001C509A /* Pose.swift */; };
+		D16786762943FA8E001C509A /* PoseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786582943FA8D001C509A /* PoseBuilder.swift */; };
+		D16786772943FA8E001C509A /* PoseBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786592943FA8D001C509A /* PoseBuilderConfiguration.swift */; };
+		D16786782943FA8E001C509A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167865B2943FA8D001C509A /* ViewController.swift */; };
+		D16786792943FA8E001C509A /* PoseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167865C2943FA8D001C509A /* PoseImageView.swift */; };
+		D167867A2943FA8E001C509A /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167865D2943FA8D001C509A /* ConfigurationViewController.swift */; };
+		D167867B2943FA8E001C509A /* PopOverModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167865E2943FA8D001C509A /* PopOverModalViewController.swift */; };
+		D167867C2943FA8E001C509A /* GradientOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167865F2943FA8D001C509A /* GradientOverlayView.swift */; };
+		D167867D2943FA8E001C509A /* AVCaptureVideoOrientation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786612943FA8D001C509A /* AVCaptureVideoOrientation+Extension.swift */; };
+		D167867E2943FA8E001C509A /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786622943FA8D001C509A /* VideoCapture.swift */; };
+		D167867F2943FA8E001C509A /* PoseNetOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786642943FA8E001C509A /* PoseNetOutput.swift */; };
+		D16786802943FA8E001C509A /* PoseNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786652943FA8E001C509A /* PoseNet.swift */; };
+		D16786812943FA8E001C509A /* PoseNetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16786662943FA8E001C509A /* PoseNetInput.swift */; };
+		D16786822943FA8E001C509A /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D16786672943FA8E001C509A /* PoseNetMobileNet075S16FP16.mlmodel */; };
+		D16786852943FA8E001C509A /* Main1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D167866C2943FA8E001C509A /* Main1.storyboard */; };
+		D168774F2945610F00253477 /* VCAlarmNameSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168774C2945610E00253477 /* VCAlarmNameSetting.swift */; };
+		D16877502945610F00253477 /* VCAlarmDaySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168774D2945610E00253477 /* VCAlarmDaySetting.swift */; };
+		D16877512945610F00253477 /* VCAlarmSoundSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D168774E2945610F00253477 /* VCAlarmSoundSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +86,29 @@
 		D13B8855293C5AE800828E54 /* OpenCVBridge.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OpenCVBridge.hh; sourceTree = "<group>"; };
 		D13B8856293C5AE800828E54 /* FFTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTHelper.h; sourceTree = "<group>"; };
 		D13B885B293C5B4700828E54 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D16786512943FA8D001C509A /* CGPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		D16786522943FA8D001C509A /* CGImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
+		D16786542943FA8D001C509A /* Joint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joint.swift; sourceTree = "<group>"; };
+		D16786552943FA8D001C509A /* PoseBuilder+Multiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PoseBuilder+Multiple.swift"; sourceTree = "<group>"; };
+		D16786562943FA8D001C509A /* PoseBuilder+Single.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PoseBuilder+Single.swift"; sourceTree = "<group>"; };
+		D16786572943FA8D001C509A /* Pose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
+		D16786582943FA8D001C509A /* PoseBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseBuilder.swift; sourceTree = "<group>"; };
+		D16786592943FA8D001C509A /* PoseBuilderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseBuilderConfiguration.swift; sourceTree = "<group>"; };
+		D167865B2943FA8D001C509A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D167865C2943FA8D001C509A /* PoseImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseImageView.swift; sourceTree = "<group>"; };
+		D167865D2943FA8D001C509A /* ConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		D167865E2943FA8D001C509A /* PopOverModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverModalViewController.swift; sourceTree = "<group>"; };
+		D167865F2943FA8D001C509A /* GradientOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientOverlayView.swift; sourceTree = "<group>"; };
+		D16786612943FA8D001C509A /* AVCaptureVideoOrientation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoOrientation+Extension.swift"; sourceTree = "<group>"; };
+		D16786622943FA8D001C509A /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		D16786642943FA8E001C509A /* PoseNetOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNetOutput.swift; sourceTree = "<group>"; };
+		D16786652943FA8E001C509A /* PoseNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNet.swift; sourceTree = "<group>"; };
+		D16786662943FA8E001C509A /* PoseNetInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNetInput.swift; sourceTree = "<group>"; };
+		D16786672943FA8E001C509A /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PoseNetMobileNet075S16FP16.mlmodel; sourceTree = "<group>"; };
+		D167866D2943FA8E001C509A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main1.storyboard; sourceTree = "<group>"; };
+		D168774C2945610E00253477 /* VCAlarmNameSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCAlarmNameSetting.swift; sourceTree = "<group>"; };
+		D168774D2945610E00253477 /* VCAlarmDaySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCAlarmDaySetting.swift; sourceTree = "<group>"; };
+		D168774E2945610F00253477 /* VCAlarmSoundSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCAlarmSoundSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +150,12 @@
 		9EED786E1AA0F03F00961BC2 /* smart-alarm */ = {
 			isa = PBXGroup;
 			children = (
+				D16786682943FA8E001C509A /* App */,
+				D16786502943FA8D001C509A /* Extensions+Types */,
+				D16786632943FA8E001C509A /* Model */,
+				D16786532943FA8D001C509A /* Pose */,
+				D167865A2943FA8D001C509A /* UI */,
+				D16786602943FA8D001C509A /* Utils */,
 				D13B885B293C5B4700828E54 /* PrefixHeader.pch */,
 				D13B885A293C5B0500828E54 /* ImageDSPUtils */,
 				D13B884F293C5ABE00828E54 /* opencv2.framework */,
@@ -123,6 +175,9 @@
 		D13B884E293C597600828E54 /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
+				D168774D2945610E00253477 /* VCAlarmDaySetting.swift */,
+				D168774C2945610E00253477 /* VCAlarmNameSetting.swift */,
+				D168774E2945610F00253477 /* VCAlarmSoundSetting.swift */,
 				7773A0F71E43276700811A1D /* Constants.swift */,
 				9EED78931AA1E51700961BC2 /* AlarmData.swift */,
 				9EEEC58B1BC641BF00459CF7 /* VCAlarmList.swift */,
@@ -145,6 +200,69 @@
 				D13B8852293C5AE800828E54 /* VideoAnalgesic.swift */,
 			);
 			name = ImageDSPUtils;
+			sourceTree = "<group>";
+		};
+		D16786502943FA8D001C509A /* Extensions+Types */ = {
+			isa = PBXGroup;
+			children = (
+				D16786512943FA8D001C509A /* CGPoint+Extension.swift */,
+				D16786522943FA8D001C509A /* CGImage+Extension.swift */,
+			);
+			path = "Extensions+Types";
+			sourceTree = "<group>";
+		};
+		D16786532943FA8D001C509A /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				D16786542943FA8D001C509A /* Joint.swift */,
+				D16786552943FA8D001C509A /* PoseBuilder+Multiple.swift */,
+				D16786562943FA8D001C509A /* PoseBuilder+Single.swift */,
+				D16786572943FA8D001C509A /* Pose.swift */,
+				D16786582943FA8D001C509A /* PoseBuilder.swift */,
+				D16786592943FA8D001C509A /* PoseBuilderConfiguration.swift */,
+			);
+			path = Pose;
+			sourceTree = "<group>";
+		};
+		D167865A2943FA8D001C509A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D167865B2943FA8D001C509A /* ViewController.swift */,
+				D167865C2943FA8D001C509A /* PoseImageView.swift */,
+				D167865D2943FA8D001C509A /* ConfigurationViewController.swift */,
+				D167865E2943FA8D001C509A /* PopOverModalViewController.swift */,
+				D167865F2943FA8D001C509A /* GradientOverlayView.swift */,
+			);
+			name = UI;
+			path = "../../../Downloads/DetectingHumanBodyPosesInAnImage 2/PoseFinder/UI";
+			sourceTree = "<group>";
+		};
+		D16786602943FA8D001C509A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D16786612943FA8D001C509A /* AVCaptureVideoOrientation+Extension.swift */,
+				D16786622943FA8D001C509A /* VideoCapture.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D16786632943FA8E001C509A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D16786642943FA8E001C509A /* PoseNetOutput.swift */,
+				D16786652943FA8E001C509A /* PoseNet.swift */,
+				D16786662943FA8E001C509A /* PoseNetInput.swift */,
+				D16786672943FA8E001C509A /* PoseNetMobileNet075S16FP16.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D16786682943FA8E001C509A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D167866C2943FA8E001C509A /* Main1.storyboard */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +358,7 @@
 				9E92445B1C690A8D00724DFA /* tickle.mp3 in Resources */,
 				9EED78771AA0F03F00961BC2 /* Main.storyboard in Resources */,
 				9E3B062F1BB8347000453456 /* bell.mp3 in Resources */,
+				D16786852943FA8E001C509A /* Main1.storyboard in Resources */,
 				9EED787C1AA0F03F00961BC2 /* LaunchScreen.xib in Resources */,
 				9EED78791AA0F03F00961BC2 /* Images.xcassets in Resources */,
 			);
@@ -259,18 +378,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D167867C2943FA8E001C509A /* GradientOverlayView.swift in Sources */,
 				D13B8858293C5AE800828E54 /* FFTHelper.m in Sources */,
 				D13B884D293C551200828E54 /* YogaPoseViewController.swift in Sources */,
 				9EED789A1AA36C7900961BC2 /* VCAlarmSetting.swift in Sources */,
+				D167867E2943FA8E001C509A /* VideoCapture.swift in Sources */,
+				D16877502945610F00253477 /* VCAlarmDaySetting.swift in Sources */,
+				D167867F2943FA8E001C509A /* PoseNetOutput.swift in Sources */,
 				D13B8859293C5AE800828E54 /* OpenCVBridge.mm in Sources */,
 				7773A0F81E43276700811A1D /* Constants.swift in Sources */,
+				D16786792943FA8E001C509A /* PoseImageView.swift in Sources */,
+				D16786742943FA8E001C509A /* PoseBuilder+Single.swift in Sources */,
+				D16786752943FA8E001C509A /* Pose.swift in Sources */,
+				D167867A2943FA8E001C509A /* ConfigurationViewController.swift in Sources */,
+				D16786712943FA8E001C509A /* CGImage+Extension.swift in Sources */,
 				D13B8857293C5AE800828E54 /* VideoAnalgesic.swift in Sources */,
 				9E1F30731C49128000C66F79 /* AlarmModel.swift in Sources */,
 				9EED78721AA0F03F00961BC2 /* AppDelegate.swift in Sources */,
 				9EED78941AA1E51700961BC2 /* AlarmData.swift in Sources */,
+				D16786732943FA8E001C509A /* PoseBuilder+Multiple.swift in Sources */,
+				D167867D2943FA8E001C509A /* AVCaptureVideoOrientation+Extension.swift in Sources */,
+				D16786762943FA8E001C509A /* PoseBuilder.swift in Sources */,
+				D16786702943FA8E001C509A /* CGPoint+Extension.swift in Sources */,
+				D16786802943FA8E001C509A /* PoseNet.swift in Sources */,
+				D16786772943FA8E001C509A /* PoseBuilderConfiguration.swift in Sources */,
+				D16786822943FA8E001C509A /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
+				D168774F2945610F00253477 /* VCAlarmNameSetting.swift in Sources */,
+				D16786722943FA8E001C509A /* Joint.swift in Sources */,
 				9EEEC58C1BC641BF00459CF7 /* VCAlarmList.swift in Sources */,
+				D167867B2943FA8E001C509A /* PopOverModalViewController.swift in Sources */,
+				D16786782943FA8E001C509A /* ViewController.swift in Sources */,
+				D16786812943FA8E001C509A /* PoseNetInput.swift in Sources */,
 				7701B7B31E99414800908B6C /* Extensions.swift in Sources */,
 				77570F6B1E3EEA75005E2923 /* Persistence.swift in Sources */,
+				D16877512945610F00253477 /* VCAlarmSoundSetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +447,14 @@
 				9EED787B1AA0F03F00961BC2 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D167866C2943FA8E001C509A /* Main1.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D167866D2943FA8E001C509A /* Base */,
+			);
+			name = Main1.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

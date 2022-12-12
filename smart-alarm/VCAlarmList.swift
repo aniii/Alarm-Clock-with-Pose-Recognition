@@ -9,12 +9,26 @@ import UIKit
 
 class VCAlarmList: UITableViewController{
    
+
+    @IBOutlet weak var changeBackground: UIButton!
     var alarmScheduler = AlarmModel.shared
     var alarmModel: Alarms = Alarms()
+    var backgroundImage: String = "BackgroundImageOne.png"
+    
+    
+    @IBAction func changeBackground(_ sender: UIButton) {
+        if(backgroundImage == "BackgroundImageOne.png"){
+            backgroundImage = "BackgroundImageTwo.png"
+            tableView.backgroundView = UIImageView(image: UIImage(named: backgroundImage))
+        }else{
+            backgroundImage = "BackgroundImageOne.png"
+            tableView.backgroundView = UIImageView(image: UIImage(named: backgroundImage))
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.backgroundView = UIImageView(image: UIImage(named: backgroundImage))
         tableView.allowsSelectionDuringEditing = true
     }
     
@@ -87,12 +101,12 @@ class VCAlarmList: UITableViewController{
         sw.tag = indexPath.row
         sw.addTarget(self, action: #selector(VCAlarmList.switchTapped(_:)), for: UIControl.Event.valueChanged)
         if alarm.enabled {
-            cell!.backgroundColor = UIColor.white
+            cell!.backgroundColor = UIColor.black
             cell!.textLabel?.alpha = 1.0
             cell!.detailTextLabel?.alpha = 1.0
             sw.setOn(true, animated: false)
         } else {
-            cell!.backgroundColor = UIColor.systemGroupedBackground
+            cell!.backgroundColor = UIColor.black
             cell!.textLabel?.alpha = 0.5
             cell!.detailTextLabel?.alpha = 0.5
         }

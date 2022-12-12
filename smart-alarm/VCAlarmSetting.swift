@@ -71,7 +71,7 @@ class VCAlarmSetting: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 1
+            return 4
         }
         else {
             return 1
@@ -87,7 +87,7 @@ class VCAlarmSetting: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         if indexPath.section == 0 {
             
-            if indexPath.row == 0 {
+            if indexPath.row == 3 {
                
                 cell!.textLabel!.text = "Snooze"
                 let sw = UISwitch(frame: CGRect())
@@ -98,6 +98,22 @@ class VCAlarmSetting: UIViewController, UITableViewDelegate, UITableViewDataSour
                 }
                 
                 cell!.accessoryView = sw
+            }
+            else if indexPath.row == 0 {
+                
+                cell!.textLabel!.text = "Repeat"
+                cell!.detailTextLabel!.text = VCAlarmDaySetting.repeatText(weekdays: segueInfo.repeatWeekdays)
+                cell!.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
+            }
+            else if indexPath.row == 1 {
+                cell!.textLabel!.text = "Label"
+                cell!.detailTextLabel!.text = segueInfo.label
+                cell!.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
+            }
+            else if indexPath.row == 2 {
+                cell!.textLabel!.text = "Sound"
+                cell!.detailTextLabel!.text = segueInfo.mediaLabel
+                cell!.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
             }
         }
         else if indexPath.section == 1 {
@@ -117,6 +133,25 @@ class VCAlarmSetting: UIViewController, UITableViewDelegate, UITableViewDataSour
             //delete alarm
             alarmData.alarms.remove(at: segueInfo.curCellIndex)
             performSegue(withIdentifier: Constants.saveSegueIdentifier, sender: self)
+        }
+        else if indexPath.section == 0 {
+            let cell = tableView.cellForRow(at: indexPath)
+            switch indexPath.row{
+            case 0:
+                performSegue(withIdentifier: Constants.weekdaysSegueIdentifier, sender: self)
+                cell?.setSelected(true, animated: false)
+                cell?.setSelected(false, animated: false)
+            case 1:
+                performSegue(withIdentifier: Constants.labelSegueIdentifier, sender: self)
+                cell?.setSelected(true, animated: false)
+                cell?.setSelected(false, animated: false)
+            case 2:
+                performSegue(withIdentifier: Constants.soundSegueIdentifier, sender: self)
+                cell?.setSelected(true, animated: false)
+                cell?.setSelected(false, animated: false)
+            default:
+                break
+            }
         }
             
     }
@@ -145,5 +180,35 @@ class VCAlarmSetting: UIViewController, UITableViewDelegate, UITableViewDataSour
                 await alarmModel.reSchedule()
             }
         }
+        else if segue.identifier == Constants.soundSegueIdentifier {
+            //TODO
+            let dist = segue.destination as! VCAlarmSoundSetting
+            dist.mediaID = segueInfo.mediaID
+            dist.mediaLabel = segueInfo.mediaLabel
+        }
+        else if segue.identifier == Constants.labelSegueIdentifier {
+            let dist = segue.destination as! VCAlarmNameSetting
+            dist.label = segueInfo.label
+        }
+        else if segue.identifier == Constants.weekdaysSegueIdentifier {
+            let dist = segue.destination as! VCAlarmDaySetting
+            dist.weekdays = segueInfo.repeatWeekdays
+        }
+    }
+    
+    @IBAction func unwindFromLabelEditView(_ segue: UIStoryboardSegue) {
+        let src = segue.source as! VCAlarmNameSetting
+        segueInfo.label = src.label
+    }
+    
+    @IBAction func unwindFromWeekdaysView(_ segue: UIStoryboardSegue) {
+        let src = segue.source as! VCAlarmDaySetting
+        segueInfo.repeatWeekdays = src.weekdays
+    }
+    
+    @IBAction func unwindFromMediaView(_ segue: UIStoryboardSegue) {
+        let src = segue.source as! VCAlarmSoundSetting
+        segueInfo.mediaLabel = src.mediaLabel
+        segueInfo.mediaID = src.mediaID
     }
 }

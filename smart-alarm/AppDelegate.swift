@@ -62,10 +62,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             /////////////////////////
             /// ADD Video UI HERE!!!
             /// /////////////////////
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let mainVC = storyboard.instantiateViewController(withIdentifier: "Yoga") as? YogaPoseViewController
+            //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            //let mainVC = storyboard.instantiateViewController(withIdentifier: "Yoga") as? YogaPoseViewController
+            //self.window?.visibleViewController?.present(mainVC!, animated: true, completion: nil)
+            let storyboard = UIStoryboard(name: "Main1", bundle: nil)
+            let mainVC = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
             self.window?.visibleViewController?.present(mainVC!, animated: true, completion: nil)
-            
         }
         
         storageController.addAction(stopOption)

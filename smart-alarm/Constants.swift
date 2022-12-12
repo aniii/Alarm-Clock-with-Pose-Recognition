@@ -16,5 +16,13 @@ struct Constants {
     static let settingIdentifier = "setting"
     static let musicIdentifier = "musicIdentifier"
     static let alarmCellIdentifier = "alarmCell"
+    
+    static let soundSegueIdentifier = "soundSegue"
+    static let labelSegueIdentifier = "labelEditSegue"
+    static let weekdaysSegueIdentifier = "weekdaysSegue"
+    
+    static let labelUnwindIdentifier = "labelUnwindSegue"
+    static let soundUnwindIdentifier = "soundUnwindSegue"
+    static let weekdaysUnwindIdentifier = "weekdaysUnwindSegue"
 
 }
