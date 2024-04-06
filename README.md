@@ -23,3 +23,5 @@ Target Users:
 - Users seeking a more engaging and interactive wake-up experience.
 
 Overall, this project demonstrates the development of a novel alarm clock application that leverages pose recognition technology to promote a more active and mindful wake-up routine.
+
+Teammates: Ananya Das, Sun Phong, Varun
